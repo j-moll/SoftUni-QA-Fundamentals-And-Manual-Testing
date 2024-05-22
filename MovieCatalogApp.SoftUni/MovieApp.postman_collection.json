@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "ef0c6a63-f58c-4dd9-b40b-287a3044c25a",
+		"name": "MovieApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34213214"
+	},
+	"item": [
+		{
+			"name": "api/User/Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"julianna_p@mail.com\",\n  \"password\": \"kyjmof-teZtez-cyzvu6\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://moviecatalog-env.eba-ubyppecf.eu-north-1.elasticbeanstalk.com/api/User/Authentication",
+					"protocol": "http",
+					"host": [
+						"moviecatalog-env",
+						"eba-ubyppecf",
+						"eu-north-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"User",
+						"Authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Movie/Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI4NWRlNDY0ZC1iZTU1LTQ4Y2ItOWNhYy1jYjMxNzc2YWIyZDQiLCJpYXQiOiI0LzE0LzIwMjQgNjo0NzowMiBBTSIsIlVzZXJJZCI6IjkwNmMyYTk4LTEzZDUtNGVmZS0xYWRkLTA4ZGM1YzQ3OWI0ZSIsIkVtYWlsIjoianVsaWFubmFfcEBtYWlsLmNvbSIsIlVzZXJOYW1lIjoianVsaWFubmFQIiwiZXhwIjoxNzEzMDk4ODIyLCJpc3MiOiJNb3ZpZUNhdGFsb2dfQXBwX1NvZnRVbmkiLCJhdWQiOiJNb3ZpZUNhdGFsb2dfV2ViQVBJX1NvZnRVbmkifQ.TiKeqkY_zjASthdf_861wpn5wiOn1i0zhpk5vRBvPXQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Spirited Away\",\n    \"description\": \"Spirited Away (Japanese: 千と千尋の神隠し, Hepburn: Sen to Chihiro no Kamikakushi, lit. 'Sen and Chihiro's Spiriting Away') is a 2001 Japanese animated fantasy film written and directed by Hayao Miyazaki.\",\n    \"posterUrl\": \"\",\n    \"trailerLink\": \"https://www.youtube.com/watch?v=ByXuk9QqQkk\",\n    \"isWatched\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://moviecatalog-env.eba-ubyppecf.eu-north-1.elasticbeanstalk.com/api/Movie/Create",
+					"protocol": "http",
+					"host": [
+						"moviecatalog-env",
+						"eba-ubyppecf",
+						"eu-north-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"Movie",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Catalog/All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI4NWRlNDY0ZC1iZTU1LTQ4Y2ItOWNhYy1jYjMxNzc2YWIyZDQiLCJpYXQiOiI0LzE0LzIwMjQgNjo0NzowMiBBTSIsIlVzZXJJZCI6IjkwNmMyYTk4LTEzZDUtNGVmZS0xYWRkLTA4ZGM1YzQ3OWI0ZSIsIkVtYWlsIjoianVsaWFubmFfcEBtYWlsLmNvbSIsIlVzZXJOYW1lIjoianVsaWFubmFQIiwiZXhwIjoxNzEzMDk4ODIyLCJpc3MiOiJNb3ZpZUNhdGFsb2dfQXBwX1NvZnRVbmkiLCJhdWQiOiJNb3ZpZUNhdGFsb2dfV2ViQVBJX1NvZnRVbmkifQ.TiKeqkY_zjASthdf_861wpn5wiOn1i0zhpk5vRBvPXQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://moviecatalog-env.eba-ubyppecf.eu-north-1.elasticbeanstalk.com/api/Catalog/All",
+					"protocol": "http",
+					"host": [
+						"moviecatalog-env",
+						"eba-ubyppecf",
+						"eu-north-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"Catalog",
+						"All"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Movie/Edit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI4NWRlNDY0ZC1iZTU1LTQ4Y2ItOWNhYy1jYjMxNzc2YWIyZDQiLCJpYXQiOiI0LzE0LzIwMjQgNjo0NzowMiBBTSIsIlVzZXJJZCI6IjkwNmMyYTk4LTEzZDUtNGVmZS0xYWRkLTA4ZGM1YzQ3OWI0ZSIsIkVtYWlsIjoianVsaWFubmFfcEBtYWlsLmNvbSIsIlVzZXJOYW1lIjoianVsaWFubmFQIiwiZXhwIjoxNzEzMDk4ODIyLCJpc3MiOiJNb3ZpZUNhdGFsb2dfQXBwX1NvZnRVbmkiLCJhdWQiOiJNb3ZpZUNhdGFsb2dfV2ViQVBJX1NvZnRVbmkifQ.TiKeqkY_zjASthdf_861wpn5wiOn1i0zhpk5vRBvPXQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"The title has been changed.\",\n    \"description\": \"Spirited Away (Japanese: 千と千尋の神隠し, Hepburn: Sen to Chihiro no Kamikakushi, lit. 'Sen and Chihiro's Spiriting Away') is a 2001 Japanese animated fantasy film written and directed by Hayao Miyazaki.\",\n    \"posterUrl\": \"\",\n    \"trailerLink\": \"https://www.youtube.com/watch?v=ByXuk9QqQkk\",\n    \"isWatched\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://moviecatalog-env.eba-ubyppecf.eu-north-1.elasticbeanstalk.com/api/Movie/Edit?movieId=97f3a185-37d7-4aed-9a9b-08dc5c49d907",
+					"protocol": "http",
+					"host": [
+						"moviecatalog-env",
+						"eba-ubyppecf",
+						"eu-north-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"Movie",
+						"Edit"
+					],
+					"query": [
+						{
+							"key": "movieId",
+							"value": "97f3a185-37d7-4aed-9a9b-08dc5c49d907"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Movie/Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI4NWRlNDY0ZC1iZTU1LTQ4Y2ItOWNhYy1jYjMxNzc2YWIyZDQiLCJpYXQiOiI0LzE0LzIwMjQgNjo0NzowMiBBTSIsIlVzZXJJZCI6IjkwNmMyYTk4LTEzZDUtNGVmZS0xYWRkLTA4ZGM1YzQ3OWI0ZSIsIkVtYWlsIjoianVsaWFubmFfcEBtYWlsLmNvbSIsIlVzZXJOYW1lIjoianVsaWFubmFQIiwiZXhwIjoxNzEzMDk4ODIyLCJpc3MiOiJNb3ZpZUNhdGFsb2dfQXBwX1NvZnRVbmkiLCJhdWQiOiJNb3ZpZUNhdGFsb2dfV2ViQVBJX1NvZnRVbmkifQ.TiKeqkY_zjASthdf_861wpn5wiOn1i0zhpk5vRBvPXQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://moviecatalog-env.eba-ubyppecf.eu-north-1.elasticbeanstalk.com/api/Movie/Delete?movieId=97f3a185-37d7-4aed-9a9b-08dc5c49d907",
+					"protocol": "http",
+					"host": [
+						"moviecatalog-env",
+						"eba-ubyppecf",
+						"eu-north-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"Movie",
+						"Delete"
+					],
+					"query": [
+						{
+							"key": "movieId",
+							"value": "97f3a185-37d7-4aed-9a9b-08dc5c49d907"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
