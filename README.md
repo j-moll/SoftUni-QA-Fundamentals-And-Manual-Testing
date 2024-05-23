@@ -2,6 +2,33 @@
 # Movie Catalog Application Testing
 
 This repository contains a testing project, developed as part of the regular exam task for "QA Fundamentals and Manual Testing" course in SoftUni.
+The report below summarizes the results of the test cases executed for the Movie Catalog App. The tests were conducted to ensure the functionality and reliability of various features within the application.
+
+## Task Description
+
+**Test Cases:**
+- Write test cases for each of the 6 use cases.
+- Each use case should have at least 2 test cases.
+- A minimum of 15 test cases should be written.
+
+**Bug Reports:**
+- Identify and describe at least 5 bugs.
+- Ensure that 2 of the bugs are either high priority or have blocking/critical severity.
+
+**Given time for the test cases execution:** 4 hours.
+
+## Test Results Distribution
+
+- **Total Test Cases:** 30
+  - **Passed:** 24
+  - **Failed:** 6
+    
+- **Total Defects Found:** 6
+  
+## Pie Chart Representation
+The results of the test cases execution are visually represented on the following pie chart, highlighting both the passing and failing test cases.
+
+![TestCasesResults](https://github.com/j-moll/SoftUni-QA-Fundamentals-And-Manual-Testing/assets/148284337/3d3dcc6b-4301-4c60-98d5-06f3d1125c1e)
 
 ## Overview
 - [Software Requirements Specification (SRS)](#software-requirements-specification-srs)
@@ -118,11 +145,10 @@ The repository includes a Postman collection with HTTP requests for testing gene
 ## Conclusion
 
 The test cases cover a broad range of the application's functionality, ensuring a reliable and user-friendly experience.
-
 They include both positive and negative scenarios to validate expected behavior and effectively handle invalid inputs.
 
 Given the time constraints, it's important to note that this project mainly focuses on practicing functional testing methods. The key areas for enhancement can be the following:
 
 - Adding more edge cases and negative test scenarios to elevate robustness of the software application.
 - Including various UI/UX testing approaches (e.g., feedback messages, loading indicators) to ensure a good user experience.
-- Enhancing security measures by validating secure login and ensuring data privacy.
+- Incorporate Non-Functional Testing, such as performance, security, and usability testing to ensure a well-rounded assessment of the application's quality.
