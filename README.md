@@ -19,8 +19,8 @@ The report below summarizes the results of the test cases executed for the Movie
 
 ## Test Results Distribution
 
-- **Total Test Cases:** 30
-  - **Passed:** 24
+- **Total Test Cases:** 29
+  - **Passed:** 23
   - **Failed:** 6
     
 - **Total Defects Found:** 6
